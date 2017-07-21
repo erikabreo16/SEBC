@@ -58,24 +58,46 @@ tmpfs           3.0G     0  3.0G   0% /run/user/1000
 
 5. usuarios
 
+*instancia 1
 
-[root@ip-172-31-42-115 centos]# useradd saturn -d /home/saturn -p saturn -s /bin/bash -u 2800
-[root@ip-172-31-42-115 centos]# useradd haley -d /home/haley -p haley -s /bin/bash -u 2900
-
-6. grupos
-
-[root@ip-172-31-42-115 centos]# groupadd comets
-[root@ip-172-31-42-115 centos]# groupadd planets
+[root@ip-172-31-41-0 centos]# cat /etc/passwd | grep saturn
+saturn:x:2800:2902::/home/saturn:/bin/bash
+[root@ip-172-31-41-0 centos]# cat /etc/passwd | grep haley
+haley:x:2900:2901::/home/haley:/bin/bash
 
 
-[root@ip-172-31-42-115 centos]# usermod saturn -g planets
-[root@ip-172-31-42-115 centos]# usermod haley -g comets
-
-7. listar usuarios
+*instancia 2
 
 
-[root@ip-172-31-42-115 centos]# cat /etc/passwd | grep saturn
-saturn:x:2800:2800::/home/saturn:/bin/bash
-[root@ip-172-31-42-115 centos]# cat /etc/passwd | grep haley
-haley:x:2900:2900::/home/haley:/bin/bash
+[root@ip-172-31-41-0 centos]# cat /etc/passwd | grep saturn
+saturn:x:2800:2902::/home/saturn:/bin/bash
+[root@ip-172-31-41-0 centos]# cat /etc/passwd | grep haley
+haley:x:2900:2901::/home/haley:/bin/bash
+
+
+*instancia 3
+
+
+[root@ip-172-31-41-0 centos]# cat /etc/passwd | grep saturn
+saturn:x:2800:2902::/home/saturn:/bin/bash
+[root@ip-172-31-41-0 centos]# cat /etc/passwd | grep haley
+haley:x:2900:2901::/home/haley:/bin/bash
+
+
+*instancia 4
+
+
+[root@ip-172-31-41-0 centos]# cat /etc/passwd | grep saturn
+saturn:x:2800:2902::/home/saturn:/bin/bash
+[root@ip-172-31-41-0 centos]# cat /etc/passwd | grep haley
+haley:x:2900:2901::/home/haley:/bin/bash
+
+*instancia 5
+
+
+[root@ip-172-31-41-0 centos]# cat /etc/passwd | grep saturn
+saturn:x:2800:2902::/home/saturn:/bin/bash
+[root@ip-172-31-41-0 centos]# cat /etc/passwd | grep haley
+haley:x:2900:2901::/home/haley:/bin/bash
+
 
