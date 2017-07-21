@@ -1,0 +1,27 @@
+
+ El tema de la seguridad es clave en cloudera, se deben tener en cuenta los 4 pilares de la seguridad.
+ 
+Adicional en un cluster con seguridad solo se vea la interfaz 
+de red asociada al FQDN de cada nodo para todo trafico relacionado a Hadoop.
+
+Los 4 pilares de la seguridad en cloudera son:
+
+ -Autenticacion
+
+Para CM:
+*AD/ LDAP
+Es la mejor opción
+
+Para CDH:
+*kerberos
+
+Protocolo de autenticacion : AD y MIT. Se utiliza user/passw y key tools.
+
+
+-Autorización
+
+-Accountability
+
+-Privacidad
+
+
