@@ -79,4 +79,3 @@ saturn:x:2800:2800::/home/saturn:/bin/bash
 [root@ip-172-31-42-115 centos]# cat /etc/passwd | grep haley
 haley:x:2900:2900::/home/haley:/bin/bash
 
-
